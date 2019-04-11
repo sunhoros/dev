@@ -6,7 +6,8 @@ gulp.task('server', function() {
     browserSync.init({
         server: {
             port: 9000,
-            baseDir: "build"
+            baseDir: "build" ,
+            injectChanges: true
         }
     });
 
